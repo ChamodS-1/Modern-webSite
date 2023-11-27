@@ -1,0 +1,20 @@
+*{
+   font-family: 'Poppins';  
+}
+
+.topic{
+    display: flex;
+    gap: 8rem;
+}
+
+#topicFont{
+    font-family: 'Poppins';
+   
+}
+
+.courseHolder{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3,20rem);
+    gap: 1.4rem;
+}
