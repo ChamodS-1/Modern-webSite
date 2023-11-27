@@ -6,14 +6,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500&display=swap" rel="stylesheet">
     <title>tailwindcss</title>
     <script src="index.js" defer></script>
+    <script src="index2.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="index.css">
+    
 </head>
 <body>
 
-<div class="bg-[#0d1224] py-2 h-max">
+<div class="bg-[#0d1224] py-2 h-full">
   <header class="sticky inset-x-0 top-0 px-10 z-50 bg-[#0d1224]">
     <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div class="flex lg:flex-1">
@@ -84,57 +89,73 @@
     <!---------->
     <div class="mx-auto max-w-10xl text-center lg:mx-0 lg:text-center">
       <h1 class="text-4xl font-bold tracking-tight text-white sm:text-5xl" id="topicFont"><span class="bg-gradient-to-r from-[#53a2fe] to-[#a57af8] inline-block text-transparent bg-clip-text">BoostUp </span> Your Coding Skills</h1>
-      <p class="mt-5 text-lg leading-7 text-gray-400">Empowering Tomorrow's Innovators: Exploring the Frontiers of Technology Education</p>
+      <p class="subTopic mt-5 text-xl leading-10 text-[#d1d6e6]">Empowering Tomorrow's Innovators: Exploring the Frontiers of Technology Education</p>
       
     </div>
 
 
-    <div class="px-20 w-max courseHolder mx-auto" >
+
+    <div class="dropdownClass w-fit mt-10">
+      <select name="" id="dropDownList">
+        <option value="0">All Courses</option>
+        <option value="1">Web Development</option>
+        <option value="2">Programing</option>
+      </select>
+      <input type="text" class="" id="inputText" placeholder="Search">
+    </div>
+
+   
+
+    <div class="courseHolder px-20 w-max  mx-auto" >
 
 
-      <div class="max-w-xs bg-[#12172a] border border-gray-100 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 courseItem">
+      <div class="allCourses max-w-xs max-h-fit bg-[#12172a] border border-[#555968] rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" data-example="1" data-number="1">
           <a href="#">
               <img class="rounded-t-lg" src="./icons/4JkBtVU9QUwcwFCWi3AV.jpg" alt="" />
           </a>
-          <div class="p-6">
+          <div class="py-6 px-6">
               <a href="#">
-                  <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white dark:text-white">Noteworthy technology acquisitions 2021</h5>
-              </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-              <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                  Read more
-                   <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                  </svg>
-              </a>
+                  <h5 class="courseTopicName mb-2 text-xl font-light tracking-tight text-white dark:text-white" data-number="1">The Mastery JavaScript Fundamentals</h5>
+              
+              <p class="subDetails mb-2 mt-3 font-light text-[#d1d6e6] dark:text-gray-400">Master the Fundamentals of Programing in JavaScript and Boost your JavaScript knowledge to advanced.</p>
+            </a>
+            <div class="flex items-center gap-3">
+            <h5 class="mb-2 text-lg font-light tracking-tight text-white dark:text-white">LKR 1500</h5>
+            <h5 class="mb-3 text-sm font-light tracking-tight text-[#d1d6e6] dark:text-white line-through">LKR 3000</h5>
+          </div>
+          <div class="">
+            <div class="bg-[#262b42] dark:bg-blue-600 font-medium md:font-bold inline px-3 py-1 rounded-2xl text-sm text-pink-500 dark:text-pink-530">6h</div>
+            </div>
           </div>
       </div>
 
-      <div class="max-w-xs bg-[#12172a] border border-gray-100 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 courseItem">
+      <div class="allCourses max-w-xs max-h-fit bg-[#12172a] border border-[#555968] rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" data-example="2" data-number="2">
         <a href="#">
-            <img class="rounded-t-lg" src="./icons/4JkBtVU9QUwcwFCWi3AV.jpg" alt="" />
+            <img class="rounded-t-lg" src="./icons/GaDoSeRHQqeFuL19uPWR.jpg" alt="" />
         </a>
-        <div class="p-6">
+        <div class="py-6 px-6">
             <a href="#">
-                <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white dark:text-white">Noteworthy technology acquisitions 2021</h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Read more
-                 <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-            </a>
+                <h5 class="courseTopicName mb-2 text-xl font-light tracking-tight text-white dark:text-white" data-number="2">Mastery JavaScript Advanced Course</h5>
+            
+            <p class="subDetails mb-2 mt-3 font-light text-[#d1d6e6] dark:text-gray-400">Level Up your JavaScript Fundamentals to Advanced Topics</p>
+          </a>
+          <div class="flex items-center gap-3">
+          <h5 class="mb-2 text-lg font-light tracking-tight text-white dark:text-white">LKR 2000</h5>
+          <h5 class="mb-3 text-sm font-light tracking-tight text-[#d1d6e6] dark:text-white line-through">LKR 4000</h5>
+        </div>
+        <div class="">
+          <div class="bg-[#262b42] dark:bg-blue-600 font-medium md:font-bold inline px-3 py-1 rounded-2xl text-sm text-pink-500 dark:text-pink-530">12h</div>
+          </div>
         </div>
     </div>
 
-    <div class="max-w-xs bg-[#12172a] border border-gray-100 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 courseItem">
+    <div class="allCourses max-w-xs bg-[#12172a] border border-[#555968] rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" data-example="1" data-number="3">
       <a href="#">
           <img class="rounded-t-lg" src="./icons/4JkBtVU9QUwcwFCWi3AV.jpg" alt="" />
       </a>
       <div class="p-6">
           <a href="#">
-              <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white dark:text-white">Noteworthy technology acquisitions 2021</h5>
+              <h5 class="courseTopicName mb-2 text-2xl font-semibold tracking-tight text-white dark:text-white" data-number="3">Noteworthy technology acquisitions 2021</h5>
           </a>
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
           <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -146,13 +167,13 @@
       </div>
   </div>
 
-  <div class="max-w-xs bg-[#12172a] border border-gray-100 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 courseItem">
+  <div class="allCourses max-w-xs bg-[#12172a] border border-[#555968] rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" data-example="1" data-number="4">
     <a href="#">
         <img class="rounded-t-lg" src="./icons/4JkBtVU9QUwcwFCWi3AV.jpg" alt="" />
     </a>
     <div class="p-6">
         <a href="#">
-            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white dark:text-white">Noteworthy technology acquisitions 2021</h5>
+            <h5 class="courseTopicName mb-2 text-2xl font-semibold tracking-tight text-white dark:text-white" data-number="4">Noteworthy technology acquisitions 2021</h5>
         </a>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
         <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -164,22 +185,9 @@
     </div>
 </div>
 
-
-  
-
-
   </div>
-
-
-
-
   </div>
-
-
-   
-  </div>
-</div>
-
-    
+ </div>
+</div>    
 </body>
 </html>
