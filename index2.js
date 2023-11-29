@@ -35,7 +35,6 @@ inputText.addEventListener('input', e => {
     if(mainCourseDiv.innerHTML === ""){
         mainCourseDiv.style.display = 'block';
         mainCourseDiv.innerHTML=`<h1 id="errorMessage" class="text-3xl font-medium tracking-tight text-white sm:text-4xl">No Result Found for <span class="bg-gradient-to-r from-[#53a2fe] to-[#a57af8] inline-block text-transparent bg-clip-text">"${input}" </span> Word</h1>`
-        console.log('empty');
   }
 
 })

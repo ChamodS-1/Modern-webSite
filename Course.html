@@ -12,6 +12,7 @@
     <title>tailwindcss</title>
     <script src="index.js" defer></script>
     <script src="index2.js" defer></script>
+    <script src="index3.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="index.css">
     
@@ -93,23 +94,20 @@
       
     </div>
 
-
-
     <div class="dropdownClass w-fit mt-10">
       <select name="" id="dropDownList">
         <option value="0">All Courses</option>
         <option value="1">Web Development</option>
         <option value="2">Programing</option>
+        <option value="3">Database</option>
       </select>
       <input type="text" class="" id="inputText" placeholder="Search">
+      <button id="suffleButton">Shuffle</button>
     </div>
-
-   
 
     <div class="courseHolder px-20 w-max  mx-auto" >
 
-
-      <div class="allCourses max-w-xs max-h-fit bg-[#12172a] border border-[#555968] rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" data-example="1" data-number="1">
+      <div class="allCourses max-w-xs max-h-fit bg-[#12172a] border border-[#555968] rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" data-example="2" data-number="1">
           <a href="#">
               <img class="rounded-t-lg" src="./icons/4JkBtVU9QUwcwFCWi3AV.jpg" alt="" />
           </a>
@@ -149,41 +147,46 @@
         </div>
     </div>
 
-    <div class="allCourses max-w-xs bg-[#12172a] border border-[#555968] rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" data-example="1" data-number="3">
+    <div class="allCourses max-w-xs max-h-fit bg-[#12172a] border border-[#555968] rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" data-example="3" data-number="3">
       <a href="#">
-          <img class="rounded-t-lg" src="./icons/4JkBtVU9QUwcwFCWi3AV.jpg" alt="" />
+          <img class="rounded-t-lg" src="./icons/kuzt9r42or1fxvlq2-Meta_Generic.jpg" alt="" />
       </a>
-      <div class="p-6">
+      <div class="py-6 px-6">
           <a href="#">
-              <h5 class="courseTopicName mb-2 text-2xl font-semibold tracking-tight text-white dark:text-white" data-number="3">Noteworthy technology acquisitions 2021</h5>
-          </a>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-          <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              Read more
-               <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-              </svg>
-          </a>
+              <h5 class="courseTopicName mb-2 text-xl font-light tracking-tight text-white dark:text-white" data-number="3">MongoDB Full Course</h5>
+          
+          <p class="subDetails mb-2 mt-3 font-light text-[#d1d6e6] dark:text-gray-400">Learn NoSQL Database Fundamentals to Advanced</p>
+        </a>
+        <div class="flex items-center gap-3">
+        <h5 class="mb-2 text-lg font-light tracking-tight text-white dark:text-white">LKR 2500</h5>
+        <h5 class="mb-3 text-sm font-light tracking-tight text-[#d1d6e6] dark:text-white line-through">LKR 4000</h5>
+      </div>
+      <div class="">
+        <div class="bg-[#262b42] dark:bg-blue-600 font-medium md:font-bold inline px-3 py-1 rounded-2xl text-sm text-pink-500 dark:text-pink-530">8h</div>
+        </div>
       </div>
   </div>
 
-  <div class="allCourses max-w-xs bg-[#12172a] border border-[#555968] rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" data-example="1" data-number="4">
+  <div class="allCourses max-w-xs max-h-fit bg-[#12172a] border border-[#555968] rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" data-example="1" data-number="4">
     <a href="#">
-        <img class="rounded-t-lg" src="./icons/4JkBtVU9QUwcwFCWi3AV.jpg" alt="" />
+        <img class="rounded-t-lg" src="./icons/nlMKa4JeSBysXoj7pa90.jpg" alt="" />
     </a>
-    <div class="p-6">
+    <div class="py-6 px-6">
         <a href="#">
-            <h5 class="courseTopicName mb-2 text-2xl font-semibold tracking-tight text-white dark:text-white" data-number="4">Noteworthy technology acquisitions 2021</h5>
-        </a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            Read more
-             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-            </svg>
-        </a>
+            <h5 class="courseTopicName mb-2 text-xl font-light tracking-tight text-white dark:text-white" data-number="4">Ultimate NodeJs Mastery</h5>
+        
+        <p class="subDetails mb-2 mt-3 font-light text-[#d1d6e6] dark:text-gray-400">Develop your backend Programing with Ultimate NodeJs series</p>
+      </a>
+      <div class="flex items-center gap-3">
+      <h5 class="mb-2 text-lg font-light tracking-tight text-white dark:text-white">LKR 3500</h5>
+      <h5 class="mb-3 text-sm font-light tracking-tight text-[#d1d6e6] dark:text-white line-through">LKR 5000</h5>
+    </div>
+    <div class="">
+      <div class="bg-[#262b42] dark:bg-blue-600 font-medium md:font-bold inline px-3 py-1 rounded-2xl text-sm text-pink-500 dark:text-pink-530">20h</div>
+      </div>
     </div>
 </div>
+
 
   </div>
   </div>
